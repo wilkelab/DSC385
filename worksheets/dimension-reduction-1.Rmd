@@ -190,7 +190,7 @@ pca_fit %>%
   coord_fixed()
 ```
 
-Use the above code to plot the rotation matrix for the blue jays PCA analysis. Make two customizations: 1. Change the x and y limits to appropriate values. Use `hjust` and/or `vjust` in `geom_text()` to aligne the text labels appropriately.
+Use the above code to plot the rotation matrix for the blue jays PCA analysis. Make two customizations: 1. Change the x and y limits to appropriate values. Use `hjust` and/or `vjust` in `geom_text()` to align the text labels appropriately.
 
 ```{r rotation-plot, exercise = TRUE}
 
