@@ -1,0 +1,181 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "!datasets/"
+    - "!apps/"
+    - "!slides/"
+  resources:
+    - "assets/"
+    - "datasets/"
+    - "apps/bin/"
+
+website:
+  title: "DSC 385"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: schedule.qmd
+        text: Schedule
+        
+    right:
+      - text: "Slides"
+        menu:
+          - text: "Class 1: Introduction"
+            href: slides/introduction.qmd
+          - text: "Class 2: Aesthetic mappings"
+            href: slides/aesthetic-mappings.qmd
+          - text: "Class 3a: Visualizing amounts"
+            href: slides/visualizing-amounts.qmd
+          - text: "Class 3b: Telling a story"
+            href: slides/telling-a-story.qmd
+          - text: "Class 4: Coordinate systems and axes"
+            href: slides/coordinate-systems-axes.qmd
+          - text: "Class 5: Visualizing distributions 1"
+            href: slides/visualizing-distributions-1.qmd
+          - text: "Class 6: Visualizing distributions 2"
+            href: slides/visualizing-distributions-2.qmd
+          - text: "Class 7: Color scales"
+            href: slides/color-scales.qmd
+          - text: "Class 8: Color spaces and color-vision deficiency"
+            href: slides/color-spaces.qmd
+          - text: "Class 9a: Data wrangling 1"
+            href: slides/data-wrangling-1.qmd
+          - text: "Class 9a: Data wrangling 2"
+            href: slides/data-wrangling-2.qmd
+          - text: "Class 10: Visualizing proportions"
+            href: slides/visualizing-proportions.qmd
+          - text: "Class 11: Getting to know your data"
+            href: slides/know-your-data.qmd
+          - text: "Class 12: Getting things into the right order"
+            href: slides/getting-things-in-order.qmd
+          - text: "Class 13: Figure design"
+            href: slides/figure-design.qmd
+          - text: "Class 14: Compound figures"
+            href: slides/compound-figures.qmd
+          - text: "Class 15: Visualizing trends"
+            href: slides/visualizing-trends.qmd
+          - text: "Class 16: Functions and functional programming"
+            href: slides/functional-programming.qmd
+          - text: "Class 17: Working with models"
+            href: slides/working-with-models.qmd
+          - text: "Class 18: Visualizing uncertainty"
+            href: slides/visualizing-uncertainty.qmd
+          - text: "Class 19: Dimension reduction 1"
+            href: slides/dimension-reduction-1.qmd
+          - text: "Class 20: Dimension reduction 2"
+            href: slides/dimension-reduction-2.qmd
+          - text: "Class 21: Clustering"
+            href: slides/clustering.qmd
+          - text: "Class 22: Hierarchical clustering"
+            href: slides/hierarchical-clustering.qmd 
+          - text: "Class 23: Redundant coding"
+            href: slides/redundant-coding.qmd 
+          - text: "Class 24: Dealing with overplotting"
+            href: slides/overplotting.qmd 
+          - text: "Class 25: Visualizing geospatial data"
+            href: slides/geospatial-data.qmd
+          - text: "Class 26: Interactive plots"
+            href: slides/interactive-plots.qmd
+          - text: "Class 27: Animations"
+            href: slides/animations.qmd
+          - text: "Bonus: Web design"
+            href: slides/web-design.qmd
+       
+      - text: "Worksheets"
+        menu:
+          - text: "Class 1a: Introduction to Quarto"
+            href: worksheets/intro-to-Quarto.qmd
+          - text: "Class 1b: Introduction to R"
+            href: worksheets/intro-to-R.qmd
+          - text: "Class 2: Aesthetic mappings"
+            href: worksheets/aesthetic-mappings.qmd
+          - text: "Class 3: Visualizing amounts"
+            href: worksheets/visualizing-amounts.qmd
+          - text: "Class 4: Coordinate systems and axes"
+            href: worksheets/coordinate-systems-axes.qmd
+          - text: "Class 5: Visualizing distributions 1"
+            href: worksheets/visualizing-distributions-1.qmd
+          - text: "Class 6: Visualizing distributions 2"
+            href: worksheets/visualizing-distributions-2.qmd
+          - text: "Class 7: Color scales"
+            href: worksheets/color-scales.qmd
+          - text: "Class 8: Color selection"
+            href: worksheets/color-selection.qmd
+          - text: "Class 9a: Data wrangling 1"
+            href: worksheets/data-wrangling-1.qmd
+          - text: "Class 9b: Data wrangling 2"
+            href: worksheets/data-wrangling-2.qmd
+          - text: "Class 10: Visualizing proportions"
+            href: worksheets/visualizing-proportions.qmd
+          - text: "Class 11a: Getting to know your data 1"
+            href: worksheets/know-your-data-1.qmd
+          - text: "Class 11b: Getting to know your data 2"
+            href: worksheets/know-your-data-2.qmd
+          - text: "Class 12: Getting things into the right order"
+            href: worksheets/getting-things-in-order.qmd
+          - text: "Class 13: Figure design"
+            href: worksheets/figure-design.qmd
+          - text: "Class 14: Compound figures"
+            href: worksheets/compound-figures.qmd
+          - text: "Class 15: Visualizing trends"
+            href: worksheets/visualizing-trends.qmd
+          - text: "Class 16: Functions and functional programming"
+            href: worksheets/functional-programming.qmd
+          - text: "Class 17: Working with models"
+            href: worksheets/working-with-models.qmd
+          - text: "Class 18: Visualizing uncertainty"
+            href: worksheets/visualizing-uncertainty.qmd
+          - text: "Class 19: Dimension reduction 1"
+            href: worksheets/dimension-reduction-1.qmd
+          - text: "Class 20: Dimension reduction 2"
+            href: worksheets/dimension-reduction-2.qmd
+          - text: "Class 21: Clustering"
+            href: worksheets/clustering.qmd
+          - text: "Class 22: Hierarchical clustering"
+            href: worksheets/hierarchical-clustering.qmd 
+          - text: "Class 23: Redundant coding"
+            href: worksheets/redundant-coding.qmd 
+          - text: "Class 24: Dealing with overplotting"
+            href: worksheets/overplotting.qmd 
+          - text: "Class 25: Visualizing geospatial data"
+            href: worksheets/geospatial-data.qmd
+          - text: "Class 26: Interactive plots"
+            href: worksheets/interactive-plots.qmd
+          - text: "Bonus: Web design"
+            href: slides/web-design-worksheet.qmd
+        
+
+      - text: "Resources"
+        menu:
+        - text: "Textbook"
+          href: "https://clauswilke.com/dataviz"
+          target: "_blank"
+        - text: "Color chooser app"
+          href: apps/bin/choose-color/index.html
+          target: "_blank"
+        - text: "CVD simulations"
+          href: apps/bin/cvd-emulator/index.html
+        
+    tools:
+      - icon: github
+        href: "https://github.com/wilkelab/DSC385"
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: [solar, theme-dark.scss]
+    css: styles.css
+    toc: true
+  live-html:
+    theme:
+      light: cosmo
+      dark: [solar, theme-dark.scss]
+    css: styles.css
+    toc: true
+execute: 
+  freeze: auto
+
+

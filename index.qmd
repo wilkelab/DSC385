@@ -1,0 +1,48 @@
+---
+title: "DSC 385"
+description: Data Exploration, Visualization, and Foundations of Unsupervised Learning
+format: html
+---
+
+This is the home page for DSC 385, Data Exploration, Visualization, and Foundations of Unsupervised Learning. All course materials will be posted on this site.
+
+Instructor: [Claus O. Wilke](https://clauswilke.com)  
+Meeting times: TTH 5:00pm to 6:30pm  
+Venue: FAC 21  
+Syllabus: [click here](syllabus.html)  
+Upcoming lectures and assignments: [click here](schedule.html)  
+
+## Computing requirements
+
+For students enrolled in this course, you only need a working web browser to access the edupod server, located at: [https://edupod.cns.utexas.edu/](https://edupod.cns.utexas.edu/)
+
+**If you are using the edupod server, stop reading here. Everything is pre-installed and no further action is needed.**
+
+To run any of the materials locally on your own machine, you will need the following:
+
+- A recent version of R, [download from here.](https://cloud.r-project.org/)
+- A recent version of RStudio, [download from here,](https://posit.co/download/rstudio-desktop/) OR a recent version of Positron, [download from here.](https://positron.posit.co/)
+- The following R packages:    
+  broom, cluster, colorspace, cowplot, gapminder, GGally, gganimate,  ggiraph, ggdendro, ggdist, ggforce, ggplot2movies, ggrepel, ggridges, ggthemes, gifski, glue, knitr, learnr, naniar, margins, MASS, Matrix, nycflights13, palmerpenguins, patchwork, quarto, rmarkdown, rnaturalearth, rnaturalearthhires, Rtsne, scales, sf, sp, tidyverse, transformr, umap
+
+You can install all required R packages at once by running the following code in the R command line:
+
+```r
+# first run this command:
+install.packages(
+  c(
+    "broom", "cluster", "colorspace", "cowplot", "gapminder", 
+    "GGally", "gganimate", "ggiraph", "ggdendro", "ggdist", "ggforce",
+    "ggplot2movies", "ggrepel", "ggridges", "ggthemes", "gifski", "glue",
+    "knitr", "learnr", "naniar", "margins", "MASS", "Matrix",
+    "nycflights13", "palmerpenguins", "patchwork", "quarto", "rmarkdown",
+    "rnaturalearth", "Rtsne", "scales", "sf", "sp", "tidyverse",
+    "transformr", "umap"
+  )
+)
+
+# then run this command:
+install.packages(
+  "rnaturalearthhires", repos = "https://packages.ropensci.org", type = "source"
+)
+```

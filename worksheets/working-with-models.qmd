@@ -1,0 +1,428 @@
+---
+title: "Working with models"
+author: "Claus O. Wilke"
+format: live-html
+engine: knitr
+webr:
+  render-df: paged-table
+---
+
+{{< include ../_extensions/r-wasm/live/_knitr.qmd >}}
+
+## Introduction
+
+In this worksheet, we will discuss how to efficiently fit statistical models (such as linear regressions) to subsets of data and then use for plotting.
+
+First we need to load the required R packages. Please wait a moment until the live R session is fully set up and all packages are loaded.
+
+```{webr}
+#| warning: false
+#| edit: false
+library(tidyverse)
+library(palmerpenguins)
+library(broom)
+library(glue)
+```
+
+Next we set up the data. We will be working with data on individual penguins in Antarctica.
+```{webr}
+#| echo: false
+penguins
+```
+
+## Inserting data into text output
+
+There are several utility functions we need to understand before we can fit models, process them with **broom**, and ultimately plot. These include nesting and unnesting of data tables, using `map()` to apply a function to all the values in a data column, and using `glue()` to generate generate text. We have discussed nesting/unnesting and `map()` in the lecture on functional programming, and you may want to review this material if it is unclear to you. Here, we will discuss how to insert data into text output.
+
+The `glue()` function allows you to place variables into a text string. This is frequently useful when we want to process multiple subsets of a larger data table and generate output for each subset.
+
+For example:
+```{webr}
+#| edit: false
+dog <- "Buddy"
+glue("I have a dog named {dog}.")
+```
+
+This also works for vectorized input.
+```{webr}
+#| edit: false
+pet <- c("dog", "dog", "cat")
+pet_name <- c("Buddy", "Lucy", "Oscar")
+glue("I have a {pet} named {pet_name}.")
+```
+
+Try this for yourself. Create variables holding your first and last name and then print out your complete name using `glue()`.
+
+```{webr} 
+#| exercise: glue-exercise
+first_name <- ___
+last_name <- ___
+
+glue("My name is ___.")
+```
+
+::: { .hint exercise="glue-exercise" }
+::: { .callout-tip title="Hint" collapse="false"}
+```r
+first_name <- "Claus"
+last_name <- "Wilke"
+
+glue("My name is ___.")
+```
+:::
+:::
+
+::: { .solution exercise="glue-exercise" }
+::: { .callout-tip title="Solution" collapse="false"}
+```r
+first_name <- "Claus"
+last_name <- "Wilke"
+
+glue("My name is {first_name} {last_name}.")
+```
+:::
+:::
+
+## Cleaning up models with **broom**
+
+R has powerful functions to fit statistical models to data, such as `lm()` to fit linear regression models. However, many of these functions have been written for interactive use and don't work well in an automated data processing pipeline. For example, consider the following code to perform a linear regression analysis on the penguins dataset (ignoring for a moment that there are multiple species):
+
+```{webr}
+#| edit: false
+fit <- lm(bill_length_mm ~ body_mass_g, data = penguins)
+fit
+summary(fit)
+```
+
+The `fit` object stores information about the linear regression, and `summary(fit)` shows us this information in a nice, human-readable form. But what if we want the relevant information in a data table? This is where the **broom** package comes in. The `glance()` function extracts model-level summary data from a fitted object, and the `tidy()` function extracts information about individual regression coefficients.
+
+```{webr}
+#| edit: false
+glance(fit)
+tidy(fit)
+```
+
+Try this yourself. Fit a model of bill length versus bill depth (formula: `bill_length_mm ~ bill_depth_mm`), look at the model fit with `summary()`, and then look at the model fit via `glance()` and `tidy()`.
+
+```{webr} 
+#| exercise: glance-tidy
+# fit linear model
+fit <- lm(___)
+
+# inspect model fit with summary()
+
+# inspect model fit with glance() and tidy()
+```
+
+::: { .hint exercise="glance-tidy" }
+::: { .callout-tip title="Hint 1" collapse="false"}
+```r
+# fit linear model
+fit <- lm(bill_length_mm ~ bill_depth_mm, data = penguins)
+
+# inspect model fit with summary()
+summary(___)
+
+# inspect model fit with glance() and tidy()
+```
+:::
+:::
+
+::: { .hint exercise="glance-tidy" }
+::: { .callout-tip title="Hint 2" collapse="false"}
+```r
+# fit linear model
+fit <- lm(bill_length_mm ~ bill_depth_mm, data = penguins)
+
+# inspect model fit with summary()
+summary(fit)
+
+# inspect model fit with glance() and tidy()
+glance(___)
+tidy(___)
+```
+:::
+:::
+
+::: { .solution exercise="glance-tidy" }
+::: { .callout-tip title="Solution" collapse="false"}
+```r
+# fit linear model
+fit <- lm(bill_length_mm ~ bill_depth_mm, data = penguins)
+
+# inspect model fit with summary()
+summary(fit)
+
+# inspect model fit with glance() and tidy()
+glance(fit)
+tidy(fit)
+```
+:::
+:::
+
+The real power of `glance()` and `tidy()` becomes apparent in a more complex data analysis pipeline, when we fit a model to subsets of data via `map()` and then combine the results from the individual fits into one large table.
+
+```{webr}
+#| edit: false
+penguins |>
+  nest(data = -species) |>     # nest the data table by species
+  mutate(
+    # use map() to fit a model to each nested data table
+    fit = map(data, ~lm(bill_length_mm ~ body_mass_g, data = .x)),
+    # use map to apply glance() to each model fit
+    glance_out = map(fit, glance)
+  ) |>
+  unnest(cols = glance_out) |> # unnest output from glance
+  select(-data, -fit)          # remove columns data and fit
+```
+
+Now run this code yourself one line at a time and make sure you understand at each step what is happening. Review the materials from the class on functional programming if anything is unclear. Note: The individual stages of the calculation are provided as hints, so you can just click through the hints one-by-one and run each piece.
+
+```{webr} 
+#| exercise: broom-map
+penguins |>
+  nest(data = -species)         # nest the data table by species
+```
+
+::: { .hint exercise="broom-map" }
+::: { .callout-tip title="Hint 1" collapse="false"}
+```r
+penguins |>
+  nest(data = -species) |>     # nest the data table by species
+  mutate(
+    # use map() to fit a model to each nested data table
+    fit = map(data, ~lm(bill_length_mm ~ body_mass_g, data = .x))
+  )
+```
+:::
+:::
+
+::: { .hint exercise="broom-map" }
+::: { .callout-tip title="Hint 2" collapse="false"}
+```r
+penguins |>
+  nest(data = -species) |>     # nest the data table by species
+  mutate(
+    # use map() to fit a model to each nested data table
+    fit = map(data, ~lm(bill_length_mm ~ body_mass_g, data = .x)),
+    # use map to apply glance() to each model fit
+    glance_out = map(fit, glance)
+  )
+```
+:::
+:::
+
+::: { .hint exercise="broom-map" }
+::: { .callout-tip title="Hint 3" collapse="false"}
+```r
+penguins |>
+  nest(data = -species) |>     # nest the data table by species
+  mutate(
+    # use map() to fit a model to each nested data table
+    fit = map(data, ~lm(bill_length_mm ~ body_mass_g, data = .x)),
+    # use map to apply glance() to each model fit
+    glance_out = map(fit, glance)
+  ) |>
+  unnest(cols = glance_out)     # unnest output from glance
+```
+:::
+:::
+
+::: { .solution exercise="broom-map" }
+::: { .callout-tip title="Solution" collapse="false"}
+```r
+penguins |>
+  nest(data = -species) |>     # nest the data table by species
+  mutate(
+    # use map() to fit a model to each nested data table
+    fit = map(data, ~lm(bill_length_mm ~ body_mass_g, data = .x)),
+    # use map to apply glance() to each model fit
+    glance_out = map(fit, glance)
+  ) |>
+  unnest(cols = glance_out) |> # unnest output from glance
+  select(-data, -fit)           # remove columns data and fit
+```
+:::
+:::
+
+## Plotting model fits
+
+Finally, we use the results from the model fit to plot a *p* value on each facet of a regression plot. The plot we'll be working with is the following:
+
+```{webr}
+#| edit: false
+#| fig-width: 8
+#| fig-height: 4
+#| message: false
+ggplot(penguins, aes(body_mass_g, bill_length_mm)) +
+  geom_point(na.rm = TRUE) +
+  geom_smooth(method = "lm", formula = y ~ x, na.rm = TRUE) +
+  facet_wrap(~species)
+```
+
+We can generate the fitted models as in the previous section. We will store them in the `penguins_fits`:
+
+```{webr}
+#| edit: false
+penguins_fits <- penguins |>
+  nest(data = -species) |>     # nest the data table by species
+  mutate(
+    # use map() to fit a model to each nested data table
+    fit = map(data, ~lm(bill_length_mm ~ body_mass_g, data = .x)),
+    # use map to apply glance() to each model fit
+    glance_out = map(fit, glance)
+  ) |>
+  unnest(cols = glance_out) |> # unnest output from glance
+  select(-data, -fit)          # remove columns data and fit
+
+penguins_fits
+```
+
+Now, do the following. First, use `mutate()`, `glue()`, and `select()` to convert this table into one that has four columns, `species`, `body_mass_g`, `bill_length_mm`, and `label`. The `species` column holds the penguin species. The next two columns will hold the coordinates of the text label. For example, the values `body_mass_g = 5500` and `bill_length_mm = 32` will work. The last column will hold labels, generated with `glue()`, of the form "p = 7.48e-06". You can use `signif(p.value, 3)` to round *p* values to three significant digits.
+
+Once you have this table, use `geom_text()` to add the labels to the above plot.
+
+```{webr} 
+#| exercise: regression-plot-exercise
+#| fig-width: 8
+#| fig-height: 4
+# first do the data table manipulation
+labels_data <- penguins_fits |>
+  mutate(
+    ___
+  )
+labels_data
+  
+# then plot
+```
+
+::: { .hint exercise="regression-plot-exercise" }
+::: { .callout-tip title="Hint 1" collapse="false"}
+```r
+# first do the data table manipulation
+labels_data <- penguins_fits |>
+  mutate(
+    body_mass_g = ___,
+    bill_length_mm = ___,
+    label = ___
+  )
+labels_data
+
+# then plot
+```
+:::
+:::
+
+::: { .hint exercise="regression-plot-exercise" }
+::: { .callout-tip title="Hint 2" collapse="false"}
+```r
+# first do the data table manipulation
+labels_data <- penguins_fits |>
+  mutate(
+    body_mass_g = 5500,
+    bill_length_mm = 32,
+    label = glue("p = {signif(p.value, 3)}")
+  ) |>
+  select(___)
+labels_data
+
+# then plot
+```
+:::
+:::
+
+::: { .hint exercise="regression-plot-exercise" }
+::: { .callout-tip title="Hint 3" collapse="false"}
+```r
+# first do the data table manipulation
+labels_data <- penguins_fits |>
+  mutate(
+    body_mass_g = 5500,
+    bill_length_mm = 32,
+    label = glue("p = {signif(p.value, 3)}")
+  ) |>
+  select(species, body_mass_g, bill_length_mm, label)
+labels_data
+  
+# then plot
+```
+:::
+:::
+
+::: { .hint exercise="regression-plot-exercise" }
+::: { .callout-tip title="Hint 4" collapse="false"}
+```r
+# first do the data table manipulation
+labels_data <- penguins_fits |>
+  mutate(
+    body_mass_g = 5500,
+    bill_length_mm = 32,
+    label = glue("p = {signif(p.value, 3)}")
+  ) |>
+  select(species, body_mass_g, bill_length_mm, label)
+  
+# then plot
+ggplot(penguins, aes(body_mass_g, bill_length_mm)) +
+  geom_point(na.rm = TRUE) +
+  geom_smooth(method = "lm", formula = y ~ x, na.rm = TRUE) +
+  facet_wrap(vars(species)) +
+  geom_text(___)
+```
+:::
+:::
+
+::: { .hint exercise="regression-plot-exercise" }
+::: { .callout-tip title="Hint 5" collapse="false"}
+```r
+# first do the data table manipulation
+labels_data <- penguins_fits |>
+  mutate(
+    body_mass_g = 5500,
+    bill_length_mm = 32,
+    label = glue("p = {signif(p.value, 3)}")
+  ) |>
+  select(species, body_mass_g, bill_length_mm, label)
+  
+# then plot
+ggplot(penguins, aes(body_mass_g, bill_length_mm)) +
+  geom_point(na.rm = TRUE) +
+  geom_smooth(method = "lm", formula = y ~ x, na.rm = TRUE) +
+  facet_wrap(vars(species)) +
+  geom_text(
+    data = labels_data,
+    aes(___)
+  )
+```
+:::
+:::
+
+::: { .solution exercise="regression-plot-exercise" }
+::: { .callout-tip title="Solution" collapse="false"}
+```r
+# first do the data table manipulation
+labels_data <- penguins_fits |>
+  mutate(
+    body_mass_g = 5500,
+    bill_length_mm = 32,
+    label = glue("p = {signif(p.value, 3)}")
+  ) |>
+  select(species, body_mass_g, bill_length_mm, label)
+  
+# then plot
+ggplot(penguins, aes(body_mass_g, bill_length_mm)) +
+  geom_point(na.rm = TRUE) +
+  geom_smooth(method = "lm", formula = y ~ x, na.rm = TRUE) +
+  facet_wrap(vars(species)) +
+  geom_text(
+    data = labels_data,
+    aes(label = label)
+  )
+```
+:::
+:::
+
+Once you have successfully made the plot, you can try a few more things:
+
+- Place the labels for the different facets in different locations within each facet.
+- Use `hjust` and `vjust` in `geom_text()` to fine-tune where labels are placed.
+- Make labels that contain the *R*<sup>2</sup> value in addition to the *p* value.
