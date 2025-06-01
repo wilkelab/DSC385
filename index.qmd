@@ -4,21 +4,11 @@ description: Data Exploration, Visualization, and Foundations of Unsupervised Le
 format: html
 ---
 
-This is the home page for DSC 385, Data Exploration, Visualization, and Foundations of Unsupervised Learning. All course materials will be posted on this site.
-
-Instructor: [Claus O. Wilke](https://clauswilke.com)  
-Meeting times: TTH 5:00pm to 6:30pm  
-Venue: FAC 21  
-Syllabus: [click here](syllabus.html)  
-Upcoming lectures and assignments: [click here](schedule.html)  
+This is the home page for DSC 385, Data Exploration, Visualization, and Foundations of Unsupervised Learning.
 
 ## Computing requirements
 
-For students enrolled in this course, you only need a working web browser to access the edupod server, located at: [https://edupod.cns.utexas.edu/](https://edupod.cns.utexas.edu/)
-
-**If you are using the edupod server, stop reading here. Everything is pre-installed and no further action is needed.**
-
-To run any of the materials locally on your own machine, you will need the following:
+To complete assignments in this class, you will need the following:
 
 - A recent version of R, [download from here.](https://cloud.r-project.org/)
 - A recent version of RStudio, [download from here,](https://posit.co/download/rstudio-desktop/) OR a recent version of Positron, [download from here.](https://positron.posit.co/)

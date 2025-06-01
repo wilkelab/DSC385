@@ -3,8 +3,8 @@ project:
   render:
     - "*.qmd"
     - "!datasets/"
+    - "!assignments/"
     - "!apps/"
-    - "!slides/"
   resources:
     - "assets/"
     - "datasets/"
