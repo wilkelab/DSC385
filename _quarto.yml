@@ -8,6 +8,7 @@ project:
   resources:
     - "assets/"
     - "datasets/"
+    - "assignments/"
     - "apps/bin/"
 
 website:
