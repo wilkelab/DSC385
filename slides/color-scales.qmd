@@ -540,6 +540,8 @@ Palette name: ColorBrewer accent
 
 <!-- Segment ends here -->
 
+#
+
 # Color scales in **ggplot2**
 
 ## Getting the data
@@ -886,6 +888,8 @@ ggplot(temps_months, aes(x = month, y = location, fill = mean)) +
 
 <!-- Segment ends here -->
 
+#
+
 # Setting colors manually for discrete, qualitative scales
 
 ## Discrete, qualitative scales are best set manually
@@ -975,6 +979,8 @@ black	         | #000000   | 0, 0, 0
 :::
 
 <!-- Segment ends here -->
+
+#
 
 ## Further reading
 

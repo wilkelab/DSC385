@@ -416,6 +416,8 @@ Notice the single fill color. More colors would be distracting.
 
 <!-- Segment ends here -->
 
+#
+
 # Making boxplots, violins, etc. in **ggplot2**
 
 ## Getting the data
@@ -539,6 +541,8 @@ ggplot(lincoln_temps, aes(x = mean_temp, y = month_long)) +
 :::
 
 <!-- Segment ends here -->
+
+#
 
 ## Further reading
 

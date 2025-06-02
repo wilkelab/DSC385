@@ -31,6 +31,13 @@ update_geom_defaults("line", list(linewidth = 1))
 tempnormals <- read_csv(here("datasets", "tempnormals.csv"))
 ```
 
+## The Grammar-of-Graphics pipeline: Coordinate systems
+
+::: {.move-down-1em}
+![](../assets/general/grammar-of-graphics.svg){width="90%" fig-align="center"}
+:::
+
+
 ## Most data visualizations use Cartesian coordinates
 
 ```{r}
@@ -534,6 +541,8 @@ ggplot(temps_long, aes(x = date, y = temperature, color = location)) +
 
 <!-- Segment ends here -->
 
+#
+
 # Scales and coordinate systems in **ggplot2**
 
 ## Getting the data
@@ -966,6 +975,8 @@ ggplot(temps_wide, aes(`San Diego`, Houston)) +
 
 
 <!-- Segment ends here -->
+
+#
 
 ## Further reading
 

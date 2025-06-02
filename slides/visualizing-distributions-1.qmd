@@ -473,6 +473,8 @@ ggplot(cows_dens, aes(x = butterfat, y = density, color = breed, fill = breed)) 
 
 <!-- Segment ends here -->
 
+#
+
 # Histograms and density plots in **ggplot2**
 
 ## Getting the data
@@ -604,15 +606,23 @@ ggplot(titanic, aes(age)) +
   )
 ```
 
-# Side-note: The Grammar-of-Graphics pipeline
+<!-- Segment ends here -->
 
-## The Grammar-of-Graphics pipeline
+#
+
+# The Grammar-of-Graphics pipeline: Facets and stats
+
+## The Grammar-of-Graphics pipeline: Facets
 
 ::: {.move-down-1em}
 ![](../assets/general/grammar-of-graphics.svg){width="90%" fig-align="center"}
 :::
 
-## Small multiples: `facet_wrap()`
+::: {.fragment .move-up-1em}
+Facets are also called "small multiples"
+:::
+
+## Faceting by one variable: `facet_wrap()`
 
 ```{r}
 #| label: titanic-dens-facets
@@ -627,7 +637,7 @@ ggplot(titanic, aes(age)) +
   facet_wrap(~class)
 ```
 
-## Small multiples: `facet_grid()`
+## Faceting by two variables: `facet_grid()`
 
 ```{r}
 #| label: titanic-dens-facets2
@@ -642,7 +652,14 @@ ggplot(titanic, aes(age)) +
   facet_grid(survived ~ class)
 ```
 
-## Statistical transformations (stats) can be set explicitly
+## The Grammar-of-Graphics pipeline: Stats
+
+::: {.move-down-1em}
+![](../assets/general/grammar-of-graphics.svg){width="90%" fig-align="center"}
+:::
+
+
+## Taking advantage of statistical transformations (stats)
 
 ```{r}
 #| label: titanic-stat-demo1
@@ -657,7 +674,7 @@ ggplot(titanic, aes(age)) +
   )
 ```
 
-## Statistical transformations (stats) can be set explicitly
+## Taking advantage of statistical transformations (stats)
 
 ```{r}
 #| label: titanic-stat-demo2
@@ -672,7 +689,7 @@ ggplot(titanic, aes(age)) +
   )
 ```
 
-## Statistical transformations (stats) can be set explicitly
+## Taking advantage of statistical transformations (stats)
 
 ```{r}
 #| label: titanic-stat-demo3
@@ -686,7 +703,7 @@ ggplot(titanic, aes(age)) +
   )
 ```
 
-## Statistical transformations (stats) can be set explicitly
+## Taking advantage of statistical transformations (stats)
 
 ```{r}
 #| label: titanic-stat-demo4
@@ -775,6 +792,8 @@ ggplot(titanic, aes(age)) +
 ```
 
 <!-- Segment ends here -->
+
+#
 
 ## Further reading
 
