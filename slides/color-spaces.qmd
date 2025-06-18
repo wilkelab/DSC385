@@ -508,6 +508,8 @@ hcl_by_h %>%
   theme_colorspace()
 ```
 
+#
+
 <!-- Segment ends here -->
 
 # Explore HCL colors interactively
@@ -533,8 +535,10 @@ The app is also available on the class website
 :::
 
 ::: {.move-up-2em}
-<a href="https://wilkelab.org/DSC385/choose-color/" target="_blank">Open color chooser app</a>
+<a href="https://wilkelab.org/DSC385/apps/bin/choose-color/" target="_blank">Open color chooser app</a>
 :::
+
+#
 
 <!-- Segment ends here -->
 
@@ -622,6 +626,8 @@ Original
 :::
 
 ![](https://clauswilke.com/dataviz/redundant_coding_files/figure-html/iris-scatter-three-shapes-cvd-1.png){.fragment .absolute top="18%" left="25%" width="70%" style="box-shadow: 3px 5px 3px 1px #00000080; padding: 16px 8px 8px 16px; background: white;"}
+
+#
 
 <!-- Segment ends here -->
 

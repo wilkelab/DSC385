@@ -3126,7 +3126,7 @@
     "href": "slides/data-wrangling-1.html#which-to-use-native-pipe-or-old-school-pipe",
     "title": "Data wrangling 1",
     "section": "Which to use? Native pipe or old-school pipe?",
-    "text": "Which to use? Native pipe or old-school pipe?\n\n\nThe native pipe |&gt; is the future. I’ll be using it throughout.\nThe magrittr %&gt;% works fine. You can use it if you llike to."
+    "text": "Which to use? Native pipe or old-school pipe?\n\n\nThe native pipe |&gt; is the future. I’ll be using it throughout.\nThe magrittr %&gt;% works fine. You can use it if you like to."
   },
   {
     "objectID": "slides/data-wrangling-1.html#pick-rows-from-a-table-filter",

@@ -110,8 +110,10 @@ penguins %>%
 
 ::: {.incremental}
 - The native pipe `|>` is the future. I'll be using it throughout.
-- The magrittr `%>%` works fine. You can use it if you llike to.
+- The magrittr `%>%` works fine. You can use it if you like to.
 :::
+
+#
 
 <!-- Segment ends here -->
 
@@ -186,6 +188,8 @@ penguins |>
 ```
 :::
 
+#
+
 <!-- Segment ends here -->
 
 # Counting things
@@ -252,6 +256,8 @@ penguins |>
 ```
 :::
 
+#
+
 <!-- Segment ends here -->
 
 # Adding new columns to a table
@@ -296,6 +302,8 @@ penguins |>
   )
 ```
 :::
+
+#
 
 <!-- Segment ends here -->
 
