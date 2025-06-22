@@ -521,6 +521,8 @@ No one visualization fits all scenarios!
 
 <!-- Segment ends here -->
 
+#
+
 # Nested proportions: proportions of proportions
 
 ## Mosaic plots subdivide data along two dimensions
@@ -575,6 +577,8 @@ Dataset: Bridges in Pittsburgh by construction material and era of construction
 :::
 
 <!-- Segment ends here -->
+
+#
 
 # Making pie charts with **ggplot2**
 
@@ -1196,6 +1200,7 @@ ggplot(pie_data) +
 
 <!-- Segment ends here -->
 
+#
 
 ## Further reading
 

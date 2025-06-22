@@ -385,6 +385,12 @@ make_plot("Gentoo")
 We need a brief detour to talk about lists and the `map()` pattern
 :::
 
+<!-- Segment ends here -->
+
+#
+
+# Lists and the `map()` pattern
+
 ## Lists
 
 ::: {.fragment .small-font}
@@ -567,8 +573,13 @@ Similarly:
 - `map_lgl()` returns a vector of logicals
 :::
 
+<!-- Segment ends here -->
 
-## Now let's go back to making plots
+#
+
+# Using functional programming to create multiple plots
+
+## Making multiple plots with `map()`
 
 ::: {.fragment .small-font}
 ```{r}
@@ -597,7 +608,7 @@ plots[[1]]
 ```
 :::
 
-## Now let's go back to making plots
+## Making multiple plots with `map()`
 
 ::: {.small-font}
 ```{r}
@@ -626,7 +637,7 @@ plots[[2]]
 ```
 :::
 
-## Now let's go back to making plots
+## Making multiple plots with `map()`
 
 ::: {.small-font}
 ```{r}
@@ -655,7 +666,7 @@ plots[[3]]
 ```
 :::
 
-## Now let's go back to making plots
+## Making multiple plots with `map()`
 
 ::: {.small-font}
 ```{r}
@@ -843,6 +854,8 @@ Note: This pipeline automatically processes all species in the dataset, whatever
 :::
 
 <!-- Segment ends here -->
+
+#
 
 ## Further reading
 

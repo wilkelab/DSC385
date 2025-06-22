@@ -522,6 +522,10 @@ ggplot(biorxiv_growth, aes(date_dec, count)) +
 Scale transformations are applied before statistical transformations
 :::
 
+<!-- Segment ends here -->
+
+#
+
 # Detrending: Removing the underlying trend
 
 ## Time series often show long-term persistent trends
@@ -1067,6 +1071,8 @@ All of these are beyond the scope of this class
 
 <!-- Segment ends here -->
 
+#
+
 # Creating trendlines in **ggplot2**
 
 ## Getting the data
@@ -1498,6 +1504,8 @@ Smoothing lines are particularly unreliable near their endpoints
 :::
 
 <!-- Segment ends here -->
+
+#
 
 ## Further reading
 

@@ -349,6 +349,8 @@ penguins |>
 
 <!-- Segment ends here -->
 
+#
+
 # Ordering other plot elements
 
 ## The gapminder dataset: Life expectancy data
@@ -815,6 +817,8 @@ For more options, check out the [reference documentation](https://forcats.tidyve
 :::
 
 <!-- Segment ends here -->
+
+#
 
 ## Further reading
 

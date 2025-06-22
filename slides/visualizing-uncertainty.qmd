@@ -416,6 +416,12 @@ Hypothetical Outcome Plots use animation to let viewers experience uncertainty
 [Hullman et al., PLOS ONE 2015](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0142444)
 :::
 
+<!-- Segment ends here -->
+
+#
+
+# Uncertainty of trend lines
+
 ## Let's now consider the uncertainty of trend lines
 
 ::: {.fragment}
@@ -457,6 +463,8 @@ Fuel efficiency versus displacement, for 32 cars (1973–74 models). Source: Mot
 :::
 
 <!-- Segment ends here -->
+
+#
 
 # Uncertainty visualizations in R
 
@@ -836,6 +844,8 @@ lm_data |>
 :::
 
 <!-- Segment ends here -->
+
+#
 
 ## Further reading
 

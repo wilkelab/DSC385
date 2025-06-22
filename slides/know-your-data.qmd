@@ -304,6 +304,8 @@ Do you have access to the data? Can you obtain it?
 
 <!-- Segment ends here -->
 
+#
+
 # Inspecting and cleaning a dataset in R
 
 ## The dataset: Births in NC
@@ -852,6 +854,8 @@ If possible, make scatter plots of every variable against every other variable
 
 <!-- Segment ends here -->
 
+#
+
 # Working with missing values in R
 
 ## R propagates missingness
@@ -1054,6 +1058,7 @@ ggplot(NCbirths) +
 
 <!-- Segment ends here -->
 
+#
 
 ## Further reading
 

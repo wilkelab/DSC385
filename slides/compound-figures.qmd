@@ -164,6 +164,8 @@ Example of figure in article or book
 
 <!-- Segment ends here -->
 
+#
+
 # Making compound plots in R
 
 ## The **patchwork** package
@@ -385,6 +387,8 @@ Titles and captions
 :::
 
 <!-- Segment ends here -->
+
+#
 
 ## Further reading
 
