@@ -1229,6 +1229,8 @@ From George Seif (2018) [The 5 Clustering Algorithms Data Scientists Need to Kno
 
 <!-- Segment ends here -->
 
+#
+
 # Doing k-means clustering in R
 
 ## Example dataset: `iris`
@@ -1420,6 +1422,8 @@ Plot suggests that around 3 clusters is the right choice
 :::
 
 <!-- Segment ends here -->
+
+#
 
 ## Further reading
 

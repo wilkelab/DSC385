@@ -679,6 +679,8 @@ Use with caution, and only when linear methods clearly aren't working
 
 <!-- Segment ends here -->
 
+#
+
 # Doing nonlinear dimension reduction in R
 
 ## Getting the data
@@ -777,6 +779,8 @@ tsne_fit$Y |>
 :::
 
 <!-- Segment ends here -->
+
+#
 
 ## Further reading
 
