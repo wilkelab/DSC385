@@ -87,6 +87,8 @@ Alaska is the largest state; 2.2 the size of Texas
 
 <!-- Segment ends here -->
 
+#
+
 # Choropleth mapping: Coloring areas by a data value
 
 ## US population density as a choropleth map
@@ -131,6 +133,8 @@ Each state is shown as an equally sized square
 
 <!-- Segment ends here -->
 
+#
+
 # Maps and layers
 
 ## Maps show data in a geospatial context
@@ -158,6 +162,8 @@ Location of individual wind turbines in the Shiloh Wind Farm
 :::
 
 <!-- Segment ends here -->
+
+#
 
 # Making geospatial visualizations in R
 
@@ -643,6 +649,8 @@ Reference: <https://spatialreference.org/ref/esri/102003/>
 :::
 
 <!-- Segment ends here -->
+
+#
 
 ## Further reading
 

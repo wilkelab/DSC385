@@ -953,6 +953,8 @@ palette: SunsetDark
 
 <!-- Segment ends here -->
 
+#
+
 # Creating 2D density plots and histograms in R
 
 ## Contour lines
@@ -1232,6 +1234,8 @@ blue_jays |>
 :::
 
 <!-- Segment ends here -->
+
+#
 
 ## Further reading
 
