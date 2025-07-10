@@ -435,6 +435,8 @@ girafe(
 
 <!-- Segment ends here -->
 
+#
+
 # Interactive plots in R
 
 ## We can make plots interactive with the **ggiraph** package
@@ -671,6 +673,8 @@ Click to open a state's wikipedia page
 
 <!-- Segment ends here -->
 
+#
+
 # A (very) brief intro to CSS
 
 ## A (very) brief intro to CSS
@@ -688,6 +692,8 @@ Interactive websites for practicing, e.g.: <https://jsfiddle.net/>
 :::
 
 <!-- Segment ends here -->
+
+#
 
 ## Further reading
 

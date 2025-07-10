@@ -1,5 +1,5 @@
 ---
-title: "Aesthetic mappings"
+title: "Aesthetic mappings and the Grammar of Graphics"
 author: "Claus O. Wilke"
 date: last-modified
 format: 
@@ -207,8 +207,15 @@ ggplot(mtcars, aes(disp, mpg, fill = hp, shape = factor(cyl), size = wt)) +
   )
 ```
 
+## The Grammar-of-Graphics pipeline
+
+::: {.move-down-1em}
+![](../assets/general/grammar-of-graphics.svg){width="90%" fig-align="center"}
+:::
+
 <!-- Segment ends here -->
 
+#
 
 # Creating aesthetic mappings in ggplot
 
@@ -349,6 +356,8 @@ ggplot(temperatures, aes(month, temperature, fill = location)) +
 
 <!-- Segment ends here -->
 
+#
+
 # Important: Distinguish between `color` and `fill`
 
 ## Distinguish between `color` and `fill`
@@ -439,6 +448,8 @@ ggplot(temperatures, aes(month, temperature, color = location)) +
 :::
 
 <!-- Segment ends here -->
+
+#
 
 ## Further reading
 
