@@ -200,6 +200,8 @@ So I wrote a book; the book is entirely about concepts, not about coding, and it
 
 <!-- Segment ends here -->
 
+#
+
 # Telling a story with figures
 
 ## Example: Preprints in biology
@@ -479,6 +481,8 @@ flights_grouped |>
 :::
 
 <!-- Segment ends here -->
+
+#
 
 ## Further reading
 
