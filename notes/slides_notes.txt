@@ -1,0 +1,10 @@
+Material to cover for class 1:
+- Quarto / assignments
+- Live exercises
+- Allowed packages
+- How to succeed
+
+
+Quarto QR code extension:
+https://jmbuhr.de/quarto-qrcode/
+https://github.com/jmbuhr/quarto-qrcode

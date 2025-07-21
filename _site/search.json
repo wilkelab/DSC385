@@ -2027,14 +2027,14 @@
     "href": "slides/introduction.html#the-source-for-the-class-website-is-on-github",
     "title": "Introduction",
     "section": "The source for the class website is on GitHub",
-    "text": "The source for the class website is on GitHub"
+    "text": "The source for the class website is on GitHub\n\n\n\n\nhttps://github.com/wilkelab/DSC385"
   },
   {
     "objectID": "slides/introduction.html#the-source-for-the-class-website-is-on-github-1",
     "href": "slides/introduction.html#the-source-for-the-class-website-is-on-github-1",
     "title": "Introduction",
     "section": "The source for the class website is on GitHub",
-    "text": "The source for the class website is on GitHub"
+    "text": "The source for the class website is on GitHub\n\n\n\n\nhttps://github.com/wilkelab/DSC385"
   },
   {
     "objectID": "slides/introduction.html#the-source-for-the-class-website-is-on-github-2",
@@ -7712,5 +7712,166 @@
     "title": "Visualizing uncertainty",
     "section": "Half-eyes, gradient intervals, etc.",
     "text": "Half-eyes, gradient intervals, etc.\nIf we want to go beyond simple error bars, the ggdist package provides many more sophisticated approaches to visualizing uncertainty distributions. These include stat_dist_halfeye(), stat_dist_gradientinterval(), and stat_dist_dotsinterval() to draw half-eyes, gradient intervals, and quantile dotplots, respectively. All these functions take an unusual aes() argument of the form aes(dist = &lt;distribution function&gt;). Here, &lt;distribution function&gt; is a distribution function from the distributional package converting the parameter estimate and standard error (and possibly other values, such as the residual degrees of freedom) into an error distribution. For example, the following mapping would use the estimate and std.error columns in the data to create a normal error distribution.\naes(dist = dist_normal(mu = estimate, sigma = std.error))\nTo demonstrate how this works, we’ll make a half-eye plot for the gapminder regression models, focusing on the year 1952 but keeping all continents.\n\n\n\n\n\n\n\n\nTry this for yourself. To change things up, pick a different year, e.g. 2002, and a different fill color.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\nlm_data |&gt;\n  filter(year == 2002) |&gt;\n  mutate(continent = fct_reorder(continent, estimate)) |&gt;\n  ggplot(aes(x = estimate, y = continent)) +\n  stat_dist_halfeye(\n    aes(dist = dist_normal(mu = estimate, sigma = std.error)),\n    fill = \"olivedrab\"\n  )\n\n\n\n\nNow use stat_dist_gradientinterval() instead of stat_dist_halfeye().\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\nlm_data |&gt;\n  filter(year == 2002) |&gt;\n  mutate(continent = fct_reorder(continent, estimate)) |&gt;\n  ggplot(aes(x = estimate, y = continent)) +\n  stat_dist_gradientinterval(\n    aes(dist = dist_normal(mu = estimate, sigma = std.error))\n  )\n\n\n\n\nAnd finally use stat_dist_dotsinterval(). This stat takes an additional parameter quantiles that determines the number of quantile dots to draw. Try quantiles = 20.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nlm_data |&gt;\n  filter(year == 2002) |&gt;\n  mutate(continent = fct_reorder(continent, estimate)) |&gt;\n  ggplot(aes(x = estimate, y = continent)) +\n  stat_dist_dotsinterval(\n    aes(dist = dist_normal(mu = estimate, sigma = std.error)),\n    fill = \"olivedrab\",\n    quantiles = ___\n  )\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\nlm_data |&gt;\n  filter(year == 2002) |&gt;\n  mutate(continent = fct_reorder(continent, estimate)) |&gt;\n  ggplot(aes(x = estimate, y = continent)) +\n  stat_dist_dotsinterval(\n    aes(dist = dist_normal(mu = estimate, sigma = std.error)),\n    fill = \"olivedrab\",\n    quantiles = 20\n  )\n\n\n\n\nChange both the year and the number of quantiles to see how quantile dotplots look in a variety of different scenarios. The possible year values range from 1952 to 2007 in five-year increments."
+  },
+  {
+    "objectID": "slides/introduction.html#data-visualization-is-an-integral-component-of-data-science",
+    "href": "slides/introduction.html#data-visualization-is-an-integral-component-of-data-science",
+    "title": "Introduction",
+    "section": "Data visualization is an integral component of data science",
+    "text": "Data visualization is an integral component of data science"
+  },
+  {
+    "objectID": "slides/introduction.html#data-visualization-is-an-integral-component-of-data-science-1",
+    "href": "slides/introduction.html#data-visualization-is-an-integral-component-of-data-science-1",
+    "title": "Introduction",
+    "section": "Data visualization is an integral component of data science",
+    "text": "Data visualization is an integral component of data science"
+  },
+  {
+    "objectID": "slides/introduction.html#who-am-i",
+    "href": "slides/introduction.html#who-am-i",
+    "title": "Introduction",
+    "section": "Who am I?",
+    "text": "Who am I?"
+  },
+  {
+    "objectID": "slides/introduction.html#who-am-i-1",
+    "href": "slides/introduction.html#who-am-i-1",
+    "title": "Introduction",
+    "section": "Who am I?",
+    "text": "Who am I?\n\n\nhttps://clauswilke.com/dataviz"
+  },
+  {
+    "objectID": "slides/introduction.html#we-will-use-r-throughout-this-class",
+    "href": "slides/introduction.html#we-will-use-r-throughout-this-class",
+    "title": "Introduction",
+    "section": "We will use R throughout this class",
+    "text": "We will use R throughout this class"
+  },
+  {
+    "objectID": "slides/introduction.html#what-about-python",
+    "href": "slides/introduction.html#what-about-python",
+    "title": "Introduction",
+    "section": "What about Python?",
+    "text": "What about Python?\n\n\nCan we use Python for assignments in this class?\nNo, all assignments require R\nWill what we learn here apply to Python?\nYes, all concepts carry over; also, look into plotnine\n\n\n\n\n\nhttps://plotnine.org/"
+  },
+  {
+    "objectID": "slides/introduction.html#data-visualization-is-integral-to-data-science",
+    "href": "slides/introduction.html#data-visualization-is-integral-to-data-science",
+    "title": "Introduction",
+    "section": "Data visualization is integral to data science",
+    "text": "Data visualization is integral to data science"
+  },
+  {
+    "objectID": "slides/introduction.html#data-visualization-is-integral-to-data-science-1",
+    "href": "slides/introduction.html#data-visualization-is-integral-to-data-science-1",
+    "title": "Introduction",
+    "section": "Data visualization is integral to data science",
+    "text": "Data visualization is integral to data science"
+  },
+  {
+    "objectID": "slides/introduction.html#all-slides-and-worksheets-are-posted-on-the-class-website",
+    "href": "slides/introduction.html#all-slides-and-worksheets-are-posted-on-the-class-website",
+    "title": "Introduction",
+    "section": "All slides and worksheets are posted on the class website",
+    "text": "All slides and worksheets are posted on the class website\n\n\n\n\nhttps://wilkelab.org/DSC385"
+  },
+  {
+    "objectID": "slides/introduction.html#slides-and-worksheets-are-posted-on-the-class-website",
+    "href": "slides/introduction.html#slides-and-worksheets-are-posted-on-the-class-website",
+    "title": "Introduction",
+    "section": "Slides and worksheets are posted on the class website",
+    "text": "Slides and worksheets are posted on the class website\n\n\n\n\nhttps://wilkelab.org/DSC385"
+  },
+  {
+    "objectID": "slides/introduction.html#running-r-locally-on-your-own-computer",
+    "href": "slides/introduction.html#running-r-locally-on-your-own-computer",
+    "title": "Introduction",
+    "section": "Running R locally on your own computer",
+    "text": "Running R locally on your own computer\n\nDownload R from here: https://cloud.r-project.org/\nDownload either RStudio or Positron\nRStudio: https://posit.co/download/rstudio-desktop/\nPositron: https://positron.posit.co/"
+  },
+  {
+    "objectID": "slides/introduction.html#running-r-in-the-posit-cloud",
+    "href": "slides/introduction.html#running-r-in-the-posit-cloud",
+    "title": "Introduction",
+    "section": "Running R in the Posit Cloud",
+    "text": "Running R in the Posit Cloud\nGo to the Posit Cloud here: https://posit.cloud/\n(You get 25 hours/month for free; see here for pricing)"
+  },
+  {
+    "objectID": "slides/introduction.html#install-required-r-packages",
+    "href": "slides/introduction.html#install-required-r-packages",
+    "title": "Introduction",
+    "section": "Install required R packages",
+    "text": "Install required R packages\nInstallation instructions are on the class website\nAll packages listed on the class website are fair game in assignments"
+  },
+  {
+    "objectID": "slides/introduction.html#setting-up-a-working-r-environment",
+    "href": "slides/introduction.html#setting-up-a-working-r-environment",
+    "title": "Introduction",
+    "section": "Setting up a working R environment",
+    "text": "Setting up a working R environment\n\nTo run R on your own computer:"
+  },
+  {
+    "objectID": "slides/introduction.html#setting-up-a-working-r-environment-1",
+    "href": "slides/introduction.html#setting-up-a-working-r-environment-1",
+    "title": "Introduction",
+    "section": "Setting up a working R environment",
+    "text": "Setting up a working R environment\nTo run R on your own computer:\n\nDownload R from here: https://cloud.r-project.org/"
+  },
+  {
+    "objectID": "slides/introduction.html#setting-up-a-working-r-environment-2",
+    "href": "slides/introduction.html#setting-up-a-working-r-environment-2",
+    "title": "Introduction",
+    "section": "Setting up a working R environment",
+    "text": "Setting up a working R environment\nTo run R on your own computer:\n\nDownload R from here: https://cloud.r-project.org/\nDownload either RStudio or Positron\nRStudio: https://posit.co/download/rstudio-desktop/\nPositron: https://positron.posit.co/"
+  },
+  {
+    "objectID": "slides/introduction.html#setting-up-a-working-r-environment-3",
+    "href": "slides/introduction.html#setting-up-a-working-r-environment-3",
+    "title": "Introduction",
+    "section": "Setting up a working R environment",
+    "text": "Setting up a working R environment\nTo run R in a web browser:"
+  },
+  {
+    "objectID": "slides/introduction.html#setting-up-a-working-r-environment-4",
+    "href": "slides/introduction.html#setting-up-a-working-r-environment-4",
+    "title": "Introduction",
+    "section": "Setting up a working R environment",
+    "text": "Setting up a working R environment\nTo run R in a web browser:\nGo to the Posit Cloud here: https://posit.cloud/\n(You get 25 hours/month for free; see here for pricing)"
+  },
+  {
+    "objectID": "slides/introduction.html#setting-up-a-working-r-environment-5",
+    "href": "slides/introduction.html#setting-up-a-working-r-environment-5",
+    "title": "Introduction",
+    "section": "Setting up a working R environment",
+    "text": "Setting up a working R environment\nOnce R is running, you need to install required R packages"
+  },
+  {
+    "objectID": "slides/introduction.html#setting-up-a-working-r-environment-6",
+    "href": "slides/introduction.html#setting-up-a-working-r-environment-6",
+    "title": "Introduction",
+    "section": "Setting up a working R environment",
+    "text": "Setting up a working R environment\nOnce R is running, you need to install required R packages\nInstallation instructions are on the class website"
+  },
+  {
+    "objectID": "slides/introduction.html#setting-up-a-working-r-environment-7",
+    "href": "slides/introduction.html#setting-up-a-working-r-environment-7",
+    "title": "Introduction",
+    "section": "Setting up a working R environment",
+    "text": "Setting up a working R environment\nOnce R is running, you need to install required R packages\nInstallation instructions are on the class website\nAll packages listed on the class website are fair game in assignments"
+  },
+  {
+    "objectID": "slides/introduction.html#who-am-i-2",
+    "href": "slides/introduction.html#who-am-i-2",
+    "title": "Introduction",
+    "section": "Who am I?",
+    "text": "Who am I?"
+  },
+  {
+    "objectID": "slides/introduction.html#how-to-succeed-in-this-class-1",
+    "href": "slides/introduction.html#how-to-succeed-in-this-class-1",
+    "title": "Introduction",
+    "section": "How to succeed in this class",
+    "text": "How to succeed in this class\n\n\nThe class is about communication, not programming\nDo all the exercises, even the low-stakes ones\nParticipate in the discussion forums, answer questions\nDon’t rely on ChatGPT or other generative AI\nIf anything goes wrong, send an email to the class email address\nPay attention to deadlines and time zones"
   }
 ]

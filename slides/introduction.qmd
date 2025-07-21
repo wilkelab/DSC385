@@ -15,15 +15,16 @@ execute:
   fig-width: 5.5
 ---
 
-## Why Data Visualization?
+## Data visualization is integral to data science
 
 ![](../assets/introduction/Data_science_venn.svg){.fragment .absolute  top="20%" left="20%" width="60%" }
 
-## Why Data Visualization?
+## Data visualization is integral to data science
 
 ![](../assets/introduction/Data_visualization_venn.svg){.absolute  top="20%" left="20%" width="60%" }
 
-## Why R?
+
+## We will use R throughout this class
 
 ::: {.fragment}
 
@@ -34,15 +35,32 @@ execute:
 
 ![](../assets/introduction/package-hexlogos.svg){.fragment .absolute  top="5%" left="55%" width="35%" }
 
-## Why me?
+## What about Python?
+
+::: {.incremental}
+- Can we use Python for assignments in this class?  
+  [No, all assignments require R]{.fragment .highlight}
+- Will what we learn here apply to Python?  
+  [Yes, all concepts carry over; also, look into plotnine]{.fragment .highlight}
+:::
 
 ::: {.fragment}
+![](../assets/introduction/plotnine.png){.absolute  top="40%" left="25%" width="50%" style="box-shadow: 3px 5px 3px 1px #00000080;"}
+
+::: {.absolute-bottom-right .tiny-font}
+<https://plotnine.org/>
+:::
+
+:::
+
+## Who am I?
+
+## Who am I?
+
 ![](https://clauswilke.com/dataviz/cover.png){.absolute  top="7%" left="0%" width="42%" style="box-shadow: 3px 5px 3px 1px #00000080;"}
 
 ::: {.absolute-bottom-left .small-font}
 [https://clauswilke.com/dataviz](https://clauswilke.com/dataviz)
-:::
-
 :::
 
 ![](https://clauswilke.com/dataviz/coordinate_systems_axes_files/figure-html/worldmap-four-projections-1.png){.fragment .absolute  top="5%" left="45%" width="35%" style="box-shadow: 3px 5px 3px 1px #00000080;"}
@@ -55,7 +73,7 @@ execute:
 
 ![](https://clauswilke.com/dataviz/multi-panel_figures_files/figure-html/athletes-composite-good-1.png){.fragment .absolute  top="45%" left="60%" width="35%" style="box-shadow: 3px 5px 3px 1px #00000080;"}
 
-## Why me?
+## Who am I?
 
 ::: {.center-text}
 ![](../assets/introduction/ggplot2.png){width="100%" style="box-shadow: 3px 5px 3px 1px #00000080;"}
@@ -63,7 +81,100 @@ execute:
 
 <!-- Segment ends here -->
 
-# Class website: [https://wilkelab.org/DSC385](https://wilkelab.org/DSC385)
+#
+
+# Class materials and computing environment
+
+## Slides and worksheets are posted on the class website
+
+::: {.move-up-1em .center-text}
+![](../assets/introduction/class-website.png){width="90%"}
+:::
+
+::: {.absolute-bottom-right .tiny-font}
+<https://wilkelab.org/DSC385>
+:::
+
+## The source for the class website is on GitHub
+
+::: {.move-up-1em .center-text}
+![](../assets/introduction/class-website-edited.png){width="90%"}
+:::
+
+::: {.absolute-bottom-right .tiny-font}
+<https://github.com/wilkelab/DSC385>
+:::
+
+## The source for the class website is on GitHub
+
+::: {.move-up-1em .center-text}
+![](../assets/introduction/github.png){width="85%"}
+:::
+
+::: {.absolute-bottom-right .tiny-font}
+<https://github.com/wilkelab/DSC385>
+:::
+
+## Press 'e' to save slides as PDF
+
+::: {.center-text}
+![](../assets/introduction/print-mode.png){width="70%" style="box-shadow: 3px 5px 3px 1px #00000080;"}
+:::
+
+(Works best on Chrome)
+
+## Setting up a working R environment
+
+::: {.fragment}
+To run R on your own computer:
+:::
+
+## Setting up a working R environment
+
+To run R on your own computer:
+
+1. Download R from here: <https://cloud.r-project.org/>
+
+## Setting up a working R environment
+
+To run R on your own computer:
+
+1. Download R from here: <https://cloud.r-project.org/>
+
+2. Download either RStudio or Positron  
+  RStudio: <https://posit.co/download/rstudio-desktop/>  
+  Positron: <https://positron.posit.co/>
+
+
+## Setting up a working R environment
+
+To run R in a web browser:
+
+## Setting up a working R environment
+
+To run R in a web browser:
+
+Go to the Posit Cloud here: <https://posit.cloud/>
+
+(You get 25 hours/month for free; see [here](https://posit.cloud/plans) for pricing)
+
+## Setting up a working R environment
+
+Once R is running, you need to install required R packages
+
+## Setting up a working R environment
+
+Once R is running, you need to install required R packages
+
+Installation instructions are [on the class website](https://wilkelab.org/DSC385/#computing-requirements>)
+
+## Setting up a working R environment
+
+Once R is running, you need to install required R packages
+
+Installation instructions are [on the class website](https://wilkelab.org/DSC385/#computing-requirements>)
+
+All packages listed on the class website are fair game in assignments
 
 ## We will use Quarto for all assignments
 
@@ -75,90 +186,31 @@ execute:
 [https://quarto.org/](https://quarto.org/)
 :::
 
-## Edupod login: [https://edupod.cns.utexas.edu](https://edupod.cns.utexas.edu)
+<!-- Segment ends here -->
 
-::: {.move-up-1em .center-text}
-![](../assets/introduction/edupod-landing.png){width="80%"}
+#
+
+# How to succeed in this class
+
+## How to succeed in this class
+
+:::{.incremental}
+- The class is about communication, not programming
+
+- Do all the exercises, even the low-stakes ones
+
+- Participate in the discussion forums, answer questions
+
+- Don't rely on ChatGPT or other generative AI
+
+- If anything goes wrong, send an email to the class email address
+
+- Pay attention to deadlines and time zones
 :::
 
-## Edupod login: [https://edupod.cns.utexas.edu](https://edupod.cns.utexas.edu)
+<!-- Segment ends here -->
 
-::: {.move-up-1em .center-text}
-![](../assets/introduction/edupod-landing-edited.png){width="80%"}
-:::
-
-## Edupod login: [https://edupod.cns.utexas.edu](https://edupod.cns.utexas.edu)
-
-::: {.move-up-1em .center-text}
-![](../assets/introduction/edupod-login.png){width="80%"}
-:::
-
-## Working with Quarto documents
-
-::: {.move-up-1em .center-text}
-![](../assets/introduction/RStudio-clean.png){width="90%"}
-:::
-
-## Working with Quarto documents
-
-::: {.move-up-1em .center-text}
-![](../assets/introduction/RStudio-clean-edited.png){width="90%"}
-:::
-
-## Working with Quarto documents
-
-::: {.move-up-1em .center-text}
-![](../assets/introduction/RStudio-quarto.png){width="90%"}
-:::
-
-## Working with Quarto documents
-
-::: {.move-up-1em .center-text}
-![](../assets/introduction/RStudio-quarto-edited.png){width="90%"}
-:::
-
-## Working with Quarto documents
-
-::: {.move-up-1em .center-text}
-![](../assets/introduction/RStudio-quarto-pdf.png){width="90%"}
-:::
-
-
-## Use "Export" to download PDFs
-
-::: {.move-up-1em .center-text}
-![](../assets/introduction/RStudio-pdf-download-edited.png){width="90%"}
-:::
-
-## The source for the class website is on GitHub
-
-::: {.move-up-1em .center-text}
-![](../assets/introduction/class-website.png){width="90%"}
-:::
-
-## The source for the class website is on GitHub
-
-::: {.move-up-1em .center-text}
-![](../assets/introduction/class-website-edited.png){width="90%"}
-:::
-
-## The source for the class website is on GitHub
-
-::: {.move-up-1em .center-text}
-![](../assets/introduction/github.png){width="85%"}
-:::
-
-::: {.absolute-bottom-right .small-font}
-[https://github.com/wilkelab/DSC385](https://github.com/wilkelab/DSC385)
-:::
-
-## Press 'e' to save slides as PDF
-
-::: {.center-text}
-![](../assets/introduction/print-mode.png){width="70%" style="box-shadow: 3px 5px 3px 1px #00000080;"}
-:::
-
-(Works best on Chrome)
+#
 
 ## Further reading
 

@@ -5,6 +5,7 @@ project:
     - "!datasets/"
     - "!assignments/"
     - "!apps/"
+    - "!notes/"
   resources:
     - "assets/"
     - "datasets/"
