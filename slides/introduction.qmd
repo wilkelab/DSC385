@@ -81,8 +81,6 @@ execute:
 
 <!-- Segment ends here -->
 
-#
-
 # Class materials and computing environment
 
 ## Slides and worksheets are posted on the class website
@@ -188,8 +186,6 @@ All packages listed on the class website are fair game in assignments
 
 <!-- Segment ends here -->
 
-#
-
 # How to succeed in this class
 
 ## How to succeed in this class
@@ -209,8 +205,6 @@ All packages listed on the class website are fair game in assignments
 :::
 
 <!-- Segment ends here -->
-
-#
 
 ## Further reading
 

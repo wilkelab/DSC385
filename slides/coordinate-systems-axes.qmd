@@ -541,8 +541,6 @@ ggplot(temps_long, aes(x = date, y = temperature, color = location)) +
 
 <!-- Segment ends here -->
 
-#
-
 # Scales and coordinate systems in **ggplot2**
 
 ## Getting the data
@@ -975,8 +973,6 @@ ggplot(temps_wide, aes(`San Diego`, Houston)) +
 
 
 <!-- Segment ends here -->
-
-#
 
 ## Further reading
 

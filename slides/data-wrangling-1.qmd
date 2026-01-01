@@ -113,8 +113,6 @@ penguins %>%
 - The magrittr `%>%` works fine. You can use it if you like to.
 :::
 
-#
-
 <!-- Segment ends here -->
 
 # Picking rows or columns, and sorting
@@ -188,8 +186,6 @@ penguins |>
 ```
 :::
 
-#
-
 <!-- Segment ends here -->
 
 # Counting things
@@ -256,8 +252,6 @@ penguins |>
 ```
 :::
 
-#
-
 <!-- Segment ends here -->
 
 # Adding new columns to a table
@@ -302,8 +296,6 @@ penguins |>
   )
 ```
 :::
-
-#
 
 <!-- Segment ends here -->
 

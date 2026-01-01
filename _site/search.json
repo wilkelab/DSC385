@@ -1390,7 +1390,7 @@
     "href": "slides/visualizing-distributions-1.html#making-histograms-with-ggplot-geom_histogram",
     "title": "Visualizing distributions 1",
     "section": "Making histograms with ggplot: geom_histogram()",
-    "text": "Making histograms with ggplot: geom_histogram()\n\nggplot(titanic, aes(age)) +\n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`."
+    "text": "Making histograms with ggplot: geom_histogram()\n\nggplot(titanic, aes(age)) +\n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`."
   },
   {
     "objectID": "slides/visualizing-distributions-1.html#setting-the-bin-width",

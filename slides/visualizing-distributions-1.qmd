@@ -473,8 +473,6 @@ ggplot(cows_dens, aes(x = butterfat, y = density, color = breed, fill = breed)) 
 
 <!-- Segment ends here -->
 
-#
-
 # Histograms and density plots in **ggplot2**
 
 ## Getting the data
@@ -607,8 +605,6 @@ ggplot(titanic, aes(age)) +
 ```
 
 <!-- Segment ends here -->
-
-#
 
 # The Grammar-of-Graphics pipeline: Facets and stats
 
@@ -792,8 +788,6 @@ ggplot(titanic, aes(age)) +
 ```
 
 <!-- Segment ends here -->
-
-#
 
 ## Further reading
 

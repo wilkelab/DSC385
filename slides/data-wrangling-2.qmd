@@ -217,8 +217,6 @@ penguins |>
 We typically need to tell R how exactly `NA`s should be handled
 :::
 
-#
-
 <!-- Segment ends here -->
 
 # Reshaping: Making tables wider or longer
@@ -307,8 +305,6 @@ penguins_wide |>
   pivot_longer(cols = Biscoe:Torgersen, names_to = "island", values_to = "n")
 ```
 :::
-
-#
 
 <!-- Segment ends here -->
 
@@ -473,8 +469,6 @@ In my experience, `left_join()` is the right choice 70–80% of the time
 :::
 :::
 ::::
-
-#
 
 <!-- Segment ends here -->
 

@@ -215,8 +215,6 @@ ggplot(mtcars, aes(disp, mpg, fill = hp, shape = factor(cyl), size = wt)) +
 
 <!-- Segment ends here -->
 
-#
-
 # Creating aesthetic mappings in ggplot
 
 ## Getting the data
@@ -356,8 +354,6 @@ ggplot(temperatures, aes(month, temperature, fill = location)) +
 
 <!-- Segment ends here -->
 
-#
-
 # Important: Distinguish between `color` and `fill`
 
 ## Distinguish between `color` and `fill`
@@ -448,8 +444,6 @@ ggplot(temperatures, aes(month, temperature, color = location)) +
 :::
 
 <!-- Segment ends here -->
-
-#
 
 ## Further reading
 

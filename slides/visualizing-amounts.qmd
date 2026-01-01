@@ -393,8 +393,6 @@ ggplot(df_Americas, aes(x = lifeExp, y = fct_reorder(country, lifeExp))) +
 
 <!-- Segment ends here -->
 
-#
-
 # Grouped bars
 
 ## We use grouped bars for higher-dimensional datasets
@@ -509,8 +507,6 @@ Data source: United States Census Bureau, 2016
 :::
 
 <!-- Segment ends here -->
-
-#
 
 # Making bar plots in **ggplot2**
 
@@ -724,8 +720,6 @@ ggplot(penguins2, aes(sex, fill = species)) +
 :::
 
 <!-- Segment ends here -->
-
-#
 
 ## Further reading
 
