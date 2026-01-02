@@ -321,8 +321,6 @@ ggplot(lincoln_temps) +
 
 <!-- Segment ends here -->
 
-#
-
 # Working with ggplot themes
 
 ---
@@ -993,8 +991,6 @@ ggplot(penguins) +
 :::
 
 <!-- Segment ends here -->
-
-#
 
 ## Further reading
 
