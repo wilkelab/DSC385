@@ -532,8 +532,6 @@ See Hans Rosling [video here](https://www.youtube.com/watch?v=jbkSRLYSojo)
 
 <!-- Segment ends here -->
 
-#
-
 ## Further reading
 
 - **gganimate** documentation: [Getting started](https://gganimate.com/articles/gganimate.html)

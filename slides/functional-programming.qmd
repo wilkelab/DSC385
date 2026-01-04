@@ -387,8 +387,6 @@ We need a brief detour to talk about lists and the `map()` pattern
 
 <!-- Segment ends here -->
 
-#
-
 # Lists and the `map()` pattern
 
 ## Lists
@@ -574,8 +572,6 @@ Similarly:
 :::
 
 <!-- Segment ends here -->
-
-#
 
 # Using functional programming to create multiple plots
 
@@ -854,8 +850,6 @@ Note: This pipeline automatically processes all species in the dataset, whatever
 :::
 
 <!-- Segment ends here -->
-
-#
 
 ## Further reading
 

@@ -438,8 +438,6 @@ correlation |>
 
 <!-- Segment ends here -->
 
-#
-
 # Hierarchical clustering via UPGMA
 
 ## Hierarchical clustering methods require two ingredients
@@ -989,8 +987,6 @@ dt |>
 
 <!-- Segment ends here -->
 
-#
-
 # Doing hierarchical clustering in R
 
 ## Doing hierarchical clustering in R
@@ -1325,8 +1321,6 @@ US_state_stats |>
 :::
 
 <!-- Segment ends here -->
-
-#
 
 ## Further reading
 

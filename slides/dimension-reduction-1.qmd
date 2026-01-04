@@ -495,8 +495,6 @@ Overall bird size explains >50% of the variation in the various measurements
 
 <!-- Segment ends here -->
 
-#
-
 # The mathematics of principal components analysis
 
 ## The mathematics of PCA
@@ -583,8 +581,6 @@ p_scatter
 ```
 
 <!-- Segment ends here -->
-
-#
 
 # Doing a PCA in R
 
@@ -945,8 +941,6 @@ pca_fit |>
 
 
 <!-- Segment ends here -->
-
-#
 
 ## Further reading
 

@@ -491,8 +491,6 @@ ggplot(tx_counties_labels, aes(x = index, y = popratio)) +
 
 <!-- Segment ends here -->
 
-#
-
 # Direct labeling in R
 
 ## 1. Manual labeling with `geom_text()`
@@ -869,8 +867,6 @@ ggplot(tech_stocks) +
 
 
 <!-- Segment ends here -->
-
-#
 
 ## Further reading
 

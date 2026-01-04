@@ -246,8 +246,6 @@ lm_summary
 
 <!-- Segment ends here -->
 
-#
-
 # Annotate plots with data extracted from models
 
 ## Turn model summary into label data
@@ -319,8 +317,6 @@ ggplot(penguins, aes(body_mass_g, flipper_length_mm)) + geom_point() +
 
 
 <!-- Segment ends here -->
-
-#
 
 ## Further reading
 
