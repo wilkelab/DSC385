@@ -3,199 +3,129 @@ title: "DSC 385 Schedule"
 format: html
 ---
 
-## Lectures
+## Modules
 
-### 1. Introduction
-
-<p class="nospace">Materials:</p>
-
-- [Slides](slides/introduction.qmd)  
-- [Worksheet 1: Introduction to Quarto](worksheets/intro-to-Quarto.qmd)
-- [Worksheet 2: Introduction to R](worksheets/intro-to-R.qmd)
-
-### 2. Aesthetic mappings
+### 1. Introduction, Aesthetic mappings
 
 <p class="nospace">Materials:</p>
 
-- [Slides](slides/aesthetic-mappings.qmd)  
-- [Worksheet](worksheets/aesthetic-mappings.qmd)
+- [Slides Part I](slides/introduction.qmd) (Introduction)
+- [Worksheet 1 Part I](worksheets/intro-to-Quarto.qmd) (Introduction to Quarto)
+- [Worksheet 2 Part I](worksheets/intro-to-R.qmd) (Introduction to R)
+- [Slides Part II](slides/aesthetic-mappings.qmd) (Aesthetic mappings)
+- [Worksheet Part II](worksheets/aesthetic-mappings.qmd) (Aesthetic mappings)
 
-### 3. Visualizing amounts/telling a story
-
-<p class="nospace">Materials:</p>
-
-- [Slides Part I](slides/visualizing-amounts.qmd) (visualizing amounts)
-- [Worksheet Part I](worksheets/visualizing-amounts.qmd)
-- [Slides Part II](slides/telling-a-story.qmd) (telling a story)
-
-### 4. Coordinate systems and axes
+### 2. Visualizing amounts, Story telling, Coordinate systems
 
 <p class="nospace">Materials:</p>
 
-- [Slides](slides/coordinate-systems-axes.qmd)  
-- [Worksheet](worksheets/coordinate-systems-axes.qmd)
+- [Slides Part I](slides/visualizing-amounts.qmd) (Visualizing amounts)
+- [Worksheet Part I](worksheets/visualizing-amounts.qmd) (Visualizing amounts)
+- [Slides Part II](slides/telling-a-story.qmd) (Telling a story)
+- [Slides Part III](slides/coordinate-systems-axes.qmd) (Coordinate systems)
+- [Worksheet Part III](worksheets/coordinate-systems-axes.qmd) (Coordinate systems)
 
-### 5. Visualizing distributions 1
-
-<p class="nospace">Materials:</p>
-
-- [Slides](slides/visualizing-distributions-1.qmd)  
-- [Worksheet](worksheets/visualizing-distributions-1.qmd)
-
-### 6. Visualizing distributions 2
+### 3. Visualizing distributions
 
 <p class="nospace">Materials:</p>
 
-- [Slides](slides/visualizing-distributions-2.qmd)  
-- [Worksheet](worksheets/visualizing-distributions-2.qmd)
+- [Slides Part I](slides/visualizing-distributions-1.qmd) (Visualizing distributions 1)
+- [Worksheet Part I](worksheets/visualizing-distributions-1.qmd) (Visualizing distributions 1)
+- [Slides Part II](slides/visualizing-distributions-2.qmd)  (Visualizing distributions 2)
+- [Worksheet Part II](worksheets/visualizing-distributions-2.qmd) (Visualizing distributions 2)
 
-### 7. Color scales
-
-<p class="nospace">Materials:</p>
-
-- [Slides](slides/color-scales.qmd)  
-- [Worksheet](worksheets/color-scales.qmd)
-
-### 8. Color spaces and color-vision deficiency
+### 4. Color
 
 <p class="nospace">Materials:</p>
 
-- [Slides](slides/color-spaces.qmd)  
-- [Worksheet](worksheets/color-selection.qmd)
+- [Slides Part I](slides/color-scales.qmd) (Color scales)
+- [Worksheet Part I](worksheets/color-scales.qmd) (Color scales)
+- [Slides Part II](slides/color-spaces.qmd) (Color spaces and color-vision deficiency)
+- [Worksheet Part II](worksheets/color-selection.qmd) (Color spaces and color-vision deficiency)
 
-### 9. Data wrangling
-
-<p class="nospace">Materials:</p>
-
-- [Slides Part I](slides/data-wrangling-1.qmd) (pipe, sorting, filtering, mutating)
-- [Worksheet Part I](worksheets/data-wrangling-1.qmd)
-- [Slides Part II](slides/data-wrangling-2.qmd) (summarizing, pivoting, joining)
-- [Worksheet Part II](worksheets/data-wrangling-2.qmd)
-
-### 10. Visualizing proportions
+### 5. Data wrangling, Visualizing proportions
 
 <p class="nospace">Materials:</p>
 
-- [Slides](slides/visualizing-proportions.qmd)  
-- [Worksheet](worksheets/visualizing-proportions.qmd)
+- [Slides Part I](slides/data-wrangling-1.qmd) (Pipe, sorting, filtering, mutating)
+- [Worksheet Part I](worksheets/data-wrangling-1.qmd) (Pipe, sorting, filtering, mutating)
+- [Slides Part II](slides/data-wrangling-2.qmd) (Summarizing, pivoting, joining)
+- [Worksheet Part II](worksheets/data-wrangling-2.qmd) (Summarizing, pivoting, joining)
+- [Slides Part III](slides/visualizing-proportions.qmd) (Visualizing proportions)
+- [Worksheet Part III](worksheets/visualizing-proportions.qmd) (Visualizing proportions)
 
-### 11. Getting to know your data
-
-<p class="nospace">Materials:</p>
-
-- [Slides](slides/know-your-data.qmd)
-- [Worksheet Part I](worksheets/know-your-data-1.qmd) (data cleaning)
-- [Worksheet Part II](worksheets/know-your-data-2.qmd) (missing data)
-
-### 12. Getting things into the right order
+### 6. Getting to know your data, Ordering plot elemens
 
 <p class="nospace">Materials:</p>
 
-- [Slides](slides/getting-things-in-order.qmd)
-- [Worksheet](worksheets/getting-things-in-order.qmd)
+- [Slides](slides/know-your-data.qmd) (Getting to know your data)
+- [Worksheet 1 Part I](worksheets/know-your-data-1.qmd) (Data cleaning)
+- [Worksheet 2 Part I](worksheets/know-your-data-2.qmd) (Missing data)
+- [Slides Part II](slides/getting-things-in-order.qmd) (Ordering plot elemens)
+- [Worksheet Part II](worksheets/getting-things-in-order.qmd) (Ordering plot elemens)
 
-### 13. Figure design
-
-<p class="nospace">Materials:</p>
-
-- [Slides](slides/figure-design.qmd)
-- [Worksheet](worksheets/figure-design.qmd)
-
-### 14. Compound figures
+### 7. Figure design, Compound figures
 
 <p class="nospace">Materials:</p>
 
-- [Slides](slides/compound-figures.qmd)  
-- [Worksheet](worksheets/compound-figures.qmd)
+- [Slides Part I](slides/figure-design.qmd) (Figure design)
+- [Worksheet Part I](worksheets/figure-design.qmd) (Figure design)
+- [Slides Part II](slides/compound-figures.qmd) (Compound figures)
+- [Worksheet Part II](worksheets/compound-figures.qmd) (Compound figures)
 
-### 15. Visualizing trends
-
-<p class="nospace">Materials:</p>
-
-- [Slides](slides/visualizing-trends.qmd)  
-- [Worksheet](worksheets/visualizing-trends.qmd)
-
-### 16. Functions and functional programming
+### 8. Visualizing trends, Functional programming
 
 <p class="nospace">Materials:</p>
 
-- [Slides](slides/functional-programming.qmd)  
-- [Worksheet](worksheets/functional-programming.qmd)
+- [Slides Part I](slides/visualizing-trends.qmd) (Visualizing trends)
+- [Worksheet Part I](worksheets/visualizing-trends.qmd) (Visualizing trends)
+- [Slides Part II](slides/functional-programming.qmd) (Functional programming)
+- [Worksheet Part II](worksheets/functional-programming.qmd) (Functional programming)
 
-### 17. Working with models
-
-<p class="nospace">Materials:</p>
-
-- [Slides](slides/working-with-models.qmd)  
-- [Worksheet](worksheets/working-with-models.qmd)
-
-### 18. Visualizing uncertainty
+### 9. Working with models, Visualizing uncertainty
 
 <p class="nospace">Materials:</p>
 
-- [Slides](slides/visualizing-uncertainty.qmd)  
-- [Worksheet](worksheets/visualizing-uncertainty.qmd)
+- [Slides Part I](slides/working-with-models.qmd) (Working with models) 
+- [Worksheet Part I](worksheets/working-with-models.qmd) (Working with models) 
+- [Slides Part II](slides/visualizing-uncertainty.qmd) (Visualizing uncertainty)
+- [Worksheet Part II](worksheets/visualizing-uncertainty.qmd) (Visualizing uncertainty)
 
-### 19. Dimension reduction 1
-
-<p class="nospace">Materials:</p>
-
-- [Slides](slides/dimension-reduction-1.qmd)  
-- [Worksheet](worksheets/dimension-reduction-1.qmd)
-
-### 20. Dimension reduction 2
+### 10. Dimension reduction
 
 <p class="nospace">Materials:</p>
 
-- [Slides](slides/dimension-reduction-2.qmd)  
-- [Worksheet](worksheets/dimension-reduction-2.qmd)
+- [Slides Part I](slides/dimension-reduction-1.qmd) (PCA)
+- [Worksheet Part I](worksheets/dimension-reduction-1.qmd) (PCA)
+- [Slides Part II](slides/dimension-reduction-2.qmd) (Nonlinear dimension reduction)
+- [Worksheet Part II](worksheets/dimension-reduction-2.qmd) (Nonlinear dimension reduction)
 
-### 21. Clustering
-
-<p class="nospace">Materials:</p>
-
-- [Slides](slides/clustering.qmd)  
-- [Worksheet](worksheets/clustering.qmd)
-
-### 22. Hierarchical clustering
+### 11. Clustering
 
 <p class="nospace">Materials:</p>
 
-- [Slides](slides/hierarchical-clustering.qmd)  
-- [Worksheet](worksheets/hierarchical-clustering.qmd)
+- [Slides Part I](slides/clustering.qmd) (Clustering)
+- [Worksheet Part I](worksheets/clustering.qmd) (Clustering)
+- [Slides Part II](slides/hierarchical-clustering.qmd) (Hierarchical clustering)  
+- [Worksheet Part II](worksheets/hierarchical-clustering.qmd) (Hierarchical clustering)
 
-### 23. Redundant coding, text annotations
-
-<p class="nospace">Materials:</p>
-
-- [Slides](slides/redundant-coding.qmd)  
-- [Worksheet](worksheets/redundant-coding.qmd)
-
-### 24. Overplotting
+### 12. Redundant coding, text annotations, overplotting
 
 <p class="nospace">Materials:</p>
 
-- [Slides](slides/overplotting.qmd)  
-- [Worksheet](worksheets/overplotting.qmd)
+- [Slides Part I](slides/redundant-coding.qmd) (Redundant coding)
+- [Worksheet Part I](worksheets/redundant-coding.qmd) (Redundant coding)
+- [Slides Part II](slides/overplotting.qmd) (Overplotting)
+- [Worksheet Part II](worksheets/overplotting.qmd) (Overplotting)
 
-### 25. Visualizing geospatial data
-
-<p class="nospace">Materials:</p>
-
-- [Slides](slides/geospatial-data.qmd)  
-- [Worksheet](worksheets/geospatial-data.qmd)
-
-### 26. Interactive plots, animations
+### 13. Visualizing geospatial data, Miscellaneous
 
 <p class="nospace">Materials:</p>
 
-- [Slides: Interactive plots](slides/interactive-plots.qmd)  
-- [Worksheet: Interactive plots](worksheets/interactive-plots.qmd)
-- [Slides: Animations](slides/animations.qmd)  
-
-### 27. Introduction to web design concepts
-
-<p class="nospace">Materials:</p>
-
-- [Slides](slides/web-design.qmd)  
-- [Worksheet](slides/web-design-worksheet.qmd)
+- [Slides Part I](slides/geospatial-data.qmd) (Geospatial data)
+- [Worksheet Part I](worksheets/geospatial-data.qmd) (Geospatial data)
+- [Slides Part II](slides/interactive-plots.qmd) (Interactive plots)
+- [Worksheet Part II](worksheets/interactive-plots.qmd) (Interactive plots)
+- [Slides Part III](slides/animations.qmd) (Animations)
+- [Slides Part IV](slides/web-design.qmd) (Web design)
+- [Worksheet Part IV](slides/web-design-worksheet.qmd) (Web design)
