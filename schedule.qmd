@@ -85,8 +85,8 @@ format: html
 
 <p class="nospace">Part II:</p>
 
-- [Slides](slides/getting-things-in-order.qmd) (Ordering plot elemens)
-- [Worksheet](worksheets/getting-things-in-order.qmd) (Ordering plot elemens)
+- [Slides](slides/getting-things-in-order.qmd) (Ordering plot elements)
+- [Worksheet](worksheets/getting-things-in-order.qmd) (Ordering plot elements)
 
 ### 7. Figure design, Compound figures
 
