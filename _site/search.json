@@ -4704,6 +4704,13 @@
     "text": "If scale units are unrelated, aspect ratio is arbitrary"
   },
   {
+    "objectID": "slides/coordinate-systems-axes.html#if-scale-units-are-unrelated-aspect-ratio-is-arbitrary-1",
+    "href": "slides/coordinate-systems-axes.html#if-scale-units-are-unrelated-aspect-ratio-is-arbitrary-1",
+    "title": "Coordinate systems and axes",
+    "section": "If scale units are unrelated, aspect ratio is arbitrary",
+    "text": "If scale units are unrelated, aspect ratio is arbitrary"
+  },
+  {
     "objectID": "slides/coordinate-systems-axes.html#logarithmic-scales-log-scales",
     "href": "slides/coordinate-systems-axes.html#logarithmic-scales-log-scales",
     "title": "Coordinate systems and axes",
@@ -4792,14 +4799,14 @@
     "href": "slides/coordinate-systems-axes.html#scale-functions-customize-the-x-and-y-axes-5",
     "title": "Coordinate systems and axes",
     "section": "Scale functions customize the x and y axes",
-    "text": "Scale functions customize the x and y axes\nThe parameter labels sets the axis tick labels:\n\n\n\nggplot(boxoffice) +\n  aes(amount, fct_reorder(title, amount)) +\n  geom_col() +\n  scale_x_continuous(\n    name = \"weekend gross (million USD)\",\n    limits = c(0, 80),\n    breaks = c(0, 25, 50, 75),\n    labels = c(\"0\", \"$25M\", \"$50M\", \"$75M\")\n  ) +\n  scale_y_discrete(\n    name = NULL\n  )"
+    "text": "Scale functions customize the x and y axes\nThe parameter labels sets the axis tick labels:\n\n\n\nggplot(boxoffice) +\n  aes(amount, fct_reorder(title, amount)) +\n  geom_col() +\n  scale_x_continuous(\n    name = \"weekend gross\",\n    limits = c(0, 80),\n    breaks = c(0, 25, 50, 75),\n    labels = c(\"0\", \"$25M\", \"$50M\", \"$75M\")\n  ) +\n  scale_y_discrete(\n    name = NULL\n  )"
   },
   {
     "objectID": "slides/coordinate-systems-axes.html#scale-functions-customize-the-x-and-y-axes-6",
     "href": "slides/coordinate-systems-axes.html#scale-functions-customize-the-x-and-y-axes-6",
     "title": "Coordinate systems and axes",
     "section": "Scale functions customize the x and y axes",
-    "text": "Scale functions customize the x and y axes\nThe parameter expand sets the axis expansion:\n\n\n\nggplot(boxoffice) +\n  aes(amount, fct_reorder(title, amount)) +\n  geom_col() +\n  scale_x_continuous(\n    name = \"weekend gross (million USD)\",\n    limits = c(0, 80),\n    breaks = c(0, 25, 50, 75),\n    labels = c(\"0\", \"$25M\", \"$50M\", \"$75M\"),\n    expand = expansion(mult = c(0, 0.06))\n  ) +\n  scale_y_discrete(\n    name = NULL\n  )"
+    "text": "Scale functions customize the x and y axes\nThe parameter expand sets the axis expansion:\n\n\n\nggplot(boxoffice) +\n  aes(amount, fct_reorder(title, amount)) +\n  geom_col() +\n  scale_x_continuous(\n    name = \"weekend gross\",\n    limits = c(0, 80),\n    breaks = c(0, 25, 50, 75),\n    labels = c(\"0\", \"$25M\", \"$50M\", \"$75M\"),\n    expand = expansion(mult = c(0, 0.06))\n  ) +\n  scale_y_discrete(\n    name = NULL\n  )"
   },
   {
     "objectID": "slides/coordinate-systems-axes.html#scale-functions-define-transformations",
