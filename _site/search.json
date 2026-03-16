@@ -686,6 +686,13 @@
     "text": "The &lt;ol&gt; and &lt;li&gt; tags: unordered lists\n\n\nHTML input:\nSome fruit:\n\n&lt;ol&gt;\n  &lt;li&gt;Apples&lt;/li&gt;\n  &lt;li&gt;Oranges&lt;/li&gt;\n  &lt;li&gt;Bananas&lt;/li&gt;\n&lt;/ol&gt;\n\nRendered output:\n\nSome fruit:\n\n\nApples\n\n\nOranges\n\n\nBananas"
   },
   {
+    "objectID": "slides/web-design.html#resources-for-further-learning-and-interactive-exploration",
+    "href": "slides/web-design.html#resources-for-further-learning-and-interactive-exploration",
+    "title": "Introduction to web design",
+    "section": "Resources for further learning and interactive exploration",
+    "text": "Resources for further learning and interactive exploration\n\nW3 Schools\nJSFiddle"
+  },
+  {
     "objectID": "slides/web-design.html#publishing-4",
     "href": "slides/web-design.html#publishing-4",
     "title": "Introduction to web design",

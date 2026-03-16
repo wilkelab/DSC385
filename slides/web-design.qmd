@@ -474,8 +474,6 @@ text.
 The CSS selector `span.red` is more specific than `.red` and therefore takes priority
 :::
 
-# Try this out for yourself: <https://jsfiddle.net/>
-
 # A few more tags to know
 
 ## The `<img>` tag: images
@@ -626,7 +624,16 @@ Some fruit:
 :::
 ::::
 
+## Resources for further learning and interactive exploration 
+
+- [W3 Schools](https://www.w3schools.com/)
+
+- [JSFiddle](<https://jsfiddle.net/>)
+
+
 <!-- Segment ends here -->
+
+#
 
 # Making a website with Quarto
 
@@ -714,6 +721,8 @@ For details and more options, see: <https://quarto.org/docs/publishing/>
 :::
 
 <!-- Segment ends here -->
+
+#
 
 ## Further reading
 
