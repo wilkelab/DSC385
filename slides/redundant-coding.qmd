@@ -79,7 +79,7 @@ cvd_sim2 <- function(p, width, height, severity = 1, scale = 0.9, hjust = 0, vju
 
 ## Color encoding alone is not always sufficient
 
-```{r iris-scatter-one-shape}
+```{r}
 #| label: iris-scatter-one-shape
 #| fig-cap: "&nbsp;"
 #| fig-width: 6
@@ -153,7 +153,7 @@ CVD simulation of preceding figure
 
 ## Using both colors and shapes helps
 
-```{r iris-scatter-one-shape}
+```{r}
 #| label: iris-scatter-three-shapes
 #| fig-cap: "&nbsp;"
 #| fig-width: 6
