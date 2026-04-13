@@ -13,7 +13,7 @@ To complete assignments in this class, you will need the following:
 - A recent version of R, [download from here.](https://cloud.r-project.org/)
 - A recent version of RStudio, [download from here,](https://posit.co/download/rstudio-desktop/) OR a recent version of Positron, [download from here.](https://positron.posit.co/)
 - The following R packages:    
-  broom, cluster, colorspace, cowplot, gapminder, GGally, gganimate,  ggiraph, ggdendro, ggdist, ggforce, ggplot2movies, ggrepel, ggridges, ggthemes, gifski, glue, knitr, learnr, naniar, margins, MASS, Matrix, nycflights13, palmerpenguins, patchwork, quarto, rmarkdown, rnaturalearth, rnaturalearthhires, Rtsne, scales, sf, sp, tidyverse, transformr, umap
+  broom, cluster, colorspace, cowplot, gapminder, GGally, gganimate,  ggiraph, ggdendro, ggdist, ggforce, ggplot2movies, ggrepel, ggridges, ggthemes, gifski, glue, hexbin, knitr, learnr, naniar, margins, MASS, Matrix, nycflights13, palmerpenguins, patchwork, quarto, rmarkdown, rnaturalearth, rnaturalearthhires, Rtsne, scales, sf, sp, tidyverse, transformr, umap
 
 You can install all required R packages at once by running the following code in the R command line:
 
@@ -24,7 +24,7 @@ install.packages(
     "broom", "cluster", "colorspace", "cowplot", "gapminder", 
     "GGally", "gganimate", "ggiraph", "ggdendro", "ggdist", "ggforce",
     "ggplot2movies", "ggrepel", "ggridges", "ggthemes", "gifski", "glue",
-    "knitr", "learnr", "naniar", "margins", "MASS", "Matrix",
+    "hexbin", "knitr", "learnr", "naniar", "margins", "MASS", "Matrix",
     "nycflights13", "palmerpenguins", "patchwork", "quarto", "rmarkdown",
     "rnaturalearth", "Rtsne", "scales", "sf", "sp", "tidyverse",
     "transformr", "umap"
